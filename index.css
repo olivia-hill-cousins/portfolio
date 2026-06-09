@@ -3,17 +3,17 @@
 /* --------------------------------------- */
 
 @font-face {
-    font-family: 'Hk Grotesk';
+    font-family: 'Fira Code';
     font-style: normal;
     font-weight: 400;
-    src: url('./fonts/HKGrotesk-Regular.woff') format('woff');
+    src: url('./fonts/FiraCode-Light.ttf') format('woff');
 }
 
 @font-face {
-    font-family: 'Jost';
+    font-family: 'Quicksand';
     font-style: normal;
     font-weight: 400;
-    src: url('./fonts/Jost-Regular.ttf') format('woff');
+    src: url('./fonts/Quicksand-VariableFont_wght.ttf') format('woff');
 }
 
 * {
@@ -29,7 +29,7 @@
     --font-size-medium-1: 3.6rem;
     --font-size-large: 5.5rem;
     --font-size-huge: 7.5rem;
-    --font-stack: 'Hk Grotesk', sans-serif;
+    --font-stack: 'Fira Code', monospace;
 
     --line-height-normal: 1.7;
     --line-height-small: 1.2;
@@ -122,7 +122,7 @@ img {
 h1,
 h2,
 h3 {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     line-height: var(--line-height-small);
     color: var(--white);
