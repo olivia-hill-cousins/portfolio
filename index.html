@@ -29,9 +29,17 @@
             </ul>
 
             <div class="box-icons">
-                <p><i class='bx bxl-linkedin'></i></p>
-                <p><i class='bi bi-bluesky'></i></p>
-                <p><i class='bx bxl-bx icon'></i></p>
+                    <a href="https://www.linkedin.com/in/olivia-hill-cousins" target="_blank" rel="noopener noreferrer">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+
+                    <a href="https://bsky.app/profile/oliviah-c.bsky.social" target="_blank" rel="noopener noreferrer">
+                        <i class='bi bi-bluesky'></i>
+                    </a>
+
+                    <a href="https://orcid.org/0009-0009-4436-8812" target="_blank" rel="noopener noreferrer">
+                        <img src="images/ORCID-iD_icon_unauth_reversed_vector.png" class="orcid-logo" alt="ORCID logo">
+                    </a>
             </div>
 
             <div class="menu-icon">
@@ -51,11 +59,12 @@
             </ul>
 
             <div class="social-sidebar">
-                <a href="http://www.linkedin.com/in/olivia-hill-cousins"><i class='bx bxl-linkedin'></i></i></a>
-                <a href="https://bsky.app/profile/oliviah-c.bsky.social"><i class="bi bi-bluesky"></i></i></a>
-                <a href="https://orcid.org/0009-0009-4436-8812">
-                <img src="images/ORCID-iD_icon_BW_vector.svg" class="bx icon" alt="ORCID">
-                </a>
+                <a href="http://www.linkedin.com/in/olivia-hill-cousins"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://bsky.app/profile/oliviah-c.bsky.social"><i class="bi bi-bluesky"></i></a>
+                <a href="https://orcid.org/0009-0009-4436-8812" target="_blank" rel="noopener noreferrer">
+  <img src="images/ORCID-iD_icon_unauth_reversed_vector.png" class="orcid-logo" alt="ORCID logo">
+</a>
+
             </div>
         </div>
 
@@ -66,7 +75,7 @@
         <section class="hero ">
             <div class="hero-info autoBlur" data-aos="fade-right" data-aos-duration="1000">
                 <div class="hero-info-title" >
-                    <i class='bx bxl-sketch'></i>
+                    <i class='bx bx-file'></i>
                     PhD Researcher Portfolio
                 </div>
 
@@ -84,46 +93,76 @@
             <div class="scroll-down"></div>
         </section>
 
-        <seaction class="info-section">
+        <section class="info-section">
             <h1 class="section-title autoDisplay">Hello,There👋</h1>
             <div class="info-cards">
-                <div class="card ">
+                <div class="card" onclick="openCard(this)">
                     <h1>Hi there, I'm Olivia</h1>
-                    <p>With 4 years of experience, I have honed my skills in both frontend and backend dev, creating dynamic and responsive websites.</p>
-                
+                <p>I'm a PhD Researcher at the University of Exeter. </p>
+
+                <div class="card-fulltext">
+                    I've been studying psychology since 2017 when I started my A-level psychology course for which I achieved an A-grade and an A* in my EPQ on "How Psychopaths are Different?". I then pursued my passion for psychology at the University of Exeter and achieved a First-Class BSc in Psychology, which was accompanied by First-Class attainment during my studies at Maastricht University (The Netherlands). My undergraduate dissertation was also on the role of psychopathy; exploring whether psychopaths know right from wrong. The same year I completed my BSc and thesis, I secured an EPSRC scholarship for a PhD at the University of Exeter. Starting towards the end of 2023, I continued my research in the field of morality (moral cognition) but applied to AI. Specifically, my current research focuses on how people make judgments of AI's moral decisions, including the processes that occur between seeing the decision and making the decision. I am now nearing the end of my PhD and considering the next steps of my academic journey.
                     
+                </div>  
+                
+                <button class="read-more" onclick="openCard(this.closest('.card'))">
+                    READ MORE <i class='bx bxs-chevron-right'></i>
+                </button>
                 </div>
 
-                <div class="card">
-                    <img src="images/ohc-bw-square.jpg" alt="">
+                <div class="card" onclick="openCard(this)">
+                    <img src="images/ohc-headshot.jpeg" alt="">
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="openCard(this)">
                     <h1>Research Toolkit</h1>
-                    <p>I work with a broad set of analytical and methodological tools, including R, Python, PsychoPy, advanced neurophysiological stimulus and methodological design, advanced data simulation and power analysis, and mixed‑effects modeling. </p>
+                    <p>I work with numerous and dynamic methodological and statistical techniques. </p>
 
                     <video src="videos/Bystander_Trolley_AI.mp4" autoplay loop muted plays-inline></video>
+                    <div class="card-fulltext">I work with a broad set of analytical and methodological tools, including R, Python, PsychoPy, advanced neurophysiological stimulus and methodological design, advanced data simulation and power analysis, and mixed‑effects modeling.</div>
+                    <div class="read-more-wrapper">
+                    <button class="read-more" onclick="openCard(this.closest('.card'))">
+                        READ MORE <i class='bx bxs-chevron-right'></i>
+                    </button>
+                </div>
 
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="openCard(this)">
                     <h1>My Interests</h1>
-                    <p>Curious by nature, I've always been drawn to the complexities of intelligent moral minds. Naturally, I gravitated towards the field of moral cognition. My academic path began with applying moral cognition to psychopathy in my BSc and now extends to AI in my PhD. Long before this, I was (am) captivated by highly intelligent mammals such as whales and dolphins, and so I am also keen to explore comparative cognition and moral behavior in non-human species.</p>
+                    <p>I've always been fascinated by morality, and how this manifests in various entities (human and non-human). </p>
                 
                     <img src="images/grid2.png" alt="">
+                    <div class="card-fulltext">Curious by nature, I've always been drawn to the complexities of intelligent moral minds. Naturally, I gravitated towards the field of moral cognition. My academic path began with applying moral cognition to psychopathy in my BSc and now extends to AI in my PhD. Long before this, I was (am) captivated by highly intelligent mammals such as whales and dolphins, and so I am also keen to explore comparative cognition and moral behavior in non-human species.</div>
+                <div class="read-more-wrapper">
+                    <button class="read-more" onclick="openCard(this.closest('.card'))">
+                        READ MORE <i class='bx bxs-chevron-right'></i>
+                    </button>
+                </div>
+
                 </div>
 
                 
 
-                <div class="card">
+                <div class="card" onclick="openCard(this)">
+                    <div class="card5-content">
+                    <i class="bx bx-skip-next-circle card5-icon"></i>
+                    <p>My work is highly interdisciplinary, a feature I love about my work. Click the "next" button to read more, or click the button below to contact me about collabs, post-docs etc.</p>
                     <h1>Seeking Post-Doc Opportunities</h1>
-                    <p>My work spans AI, computational ethics, social psychology and cognition, and I thrive in interdisciplinary environments. I’m open to collaborations across diverse research areas and am actively exploring post‑doctoral opportunities to continue developing my academic career.</p>
-                
-                    <img src="images/grid4.png" alt="">
                     <button><i class='bx bx-send'></i> Contact Me</button>
+                    </div>
+                    <div class="card-fulltext">My work spans AI, computational ethics, social psychology and cognition, and I thrive in interdisciplinary environments. I’m open to collaborations across diverse research areas and am actively exploring post‑doctoral opportunities to continue developing my academic career.</div>
+                    <div class="read-more-wrapper">
+                <button class="read-more" onclick="openCard(this.closest('.card'))">
+                    READ MORE <i class='bx bxs-chevron-right'></i>
+                </button>
+                </div>
+
                 </div>
             </div>
-        </seaction>
+                <div class="card-overlay" onclick="closeCard()"></div>
+            
+        </section>
 
         <section class="my-project">
             
@@ -138,7 +177,7 @@
                     <p>The preprint details my meta-analysis of 50+ studies that looked at how people judge AI agents’ moral decisions compared to humans. Broadly speaking, we do 𝗻𝗼𝘁 judge AI in a fundamentally different way (🧍 = 🤖), but our judgments are malleable to factors such as the mental capabilities we perceive the AI to have (🤖 ≠ 🧠/💕). </p>
                      <a href="https://osf.io/preprints/psyarxiv/stcej_v2" target="_blank">
             <button>
-                <i class='bx bx-link-external'></i> Website
+                <i class='bx bx-link-external'></i> PDF
             </button>
         </a>
                     
@@ -153,7 +192,7 @@
                     <h1> Solution for Sending <span class="gradient">Dynamic</span> EEG Triggers </h1>
                     <p>This preprint details the pipeline I have developed to accommodate experimental designs, previously inaccessible to neuroimaging work. The full pipeline (including a drop-in PsychoPy study) is available for download via the link below.</p>
                     <a href="https://osf.io/preprints/psyarxiv/2fmbj_v1" target="_blank">
-                    <button><i class='bx bx-link-external' ></i> Website</button>
+                    <button><i class='bx bx-link-external' ></i> PDF</button>
                 </a>
                 </div>
             </div>
@@ -197,15 +236,15 @@
                 --quantity: 9;
                 ">
                     <div class="list">
-                        <div class="item" style="--position: 1"><img src="images/1.png" alt=""></div>
-                        <div class="item" style="--position: 2"><img src="images/2.png" alt=""></div>
-                        <div class="item" style="--position: 3"><img src="images/3.webp" alt=""></div>
-                        <div class="item" style="--position: 4"><img src="images/4.webp" alt=""></div>
-                        <div class="item" style="--position: 5"><img src="images/5.png" alt=""></div>
-                        <div class="item" style="--position: 6"><img src="images/6.png" alt=""></div>
-                        <div class="item" style="--position: 7"><img src="images/7.png" alt=""></div>
-                        <div class="item" style="--position: 8"><img src="images/8.png" alt=""></div>
-                        <div class="item" style="--position: 9"><img src="images/9.png" alt=""></div>
+                        <div class="item" style="--position: 1"><img src="images/psychopy.png" alt=""></div>
+                        <div class="item" style="--position: 2"><img src="images/vscode.png" alt=""></div>
+                        <div class="item" style="--position: 3"><img src="images/python-logo-only.png" alt=""></div>
+                        <div class="item" style="--position: 4"><img src="images/Rlogo.png" alt=""></div>
+                        <div class="item" style="--position: 5"><img src="images/gorilla_logo.png" alt=""></div>
+                        <div class="item" style="--position: 6"><img src="images/osf_white.png" alt=""></div>
+                        <div class="item" style="--position: 7"><img src="images/Adobe_After_Effects_CC_icon.png" alt=""></div>
+                        <div class="item" style="--position: 8"><img src="images/Adobe_Illustrator_CC_icon.png" alt=""></div>
+                        <div class="item" style="--position: 9"><img src="images/Adobe_Photoshop_CC_icon.png" alt=""></div>
                     </div>
                 </div>
             </div>
@@ -217,11 +256,11 @@
             <div class="social-box autoBlur">
             
                 <a href="#"><i class='bx bxl-telegram' ></i> oh298@exeter.ac.uk</a>
-                <a href="#"><i class='bx bxl-linkedin-square' ></i> olivia-hill-cousins</a>
+                <a href="http://www.linkedin.com/in/olivia-hill-cousins"><i class='bx bxl-linkedin-square' ></i> olivia-hill-cousins</a>
                 <div class="social-icons">
-                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="#"><i class='bi bi-bluesky' ></i></a>
-                    <a href="#"><i class='bx icon' ></i></a>
+                     <a href="https://orcid.org/0009-0009-4436-8812" target="_blank" rel="noopener noreferrer">
+  <img src="images/ORCID-iD_icon_unauth_reversed_vector.png" class="orcid-logo" alt="ORCID logo"></a>
+                <a href="https://bsky.app/profile/oliviah-c.bsky.social"><i class="bi bi-bluesky"></i></i></a>
                 </div>
             </div>
 
@@ -242,11 +281,21 @@
         </section> 
 
         <section class="footer">
-            <h1>©️2025, Made with ❤️ by MiladiCode</h1>
+            <p> <a href="https://github.com/MiladiCode/Animated-Portfolio" target="_blank">
+    Adapted from ©️2025, Made with ❤️ by MiladiCode 
+  </a></p>
             <div class="box-icons">
-                <p><i class='bx bxl-linkedin'></i></p>
-                <p><i class='bi bi-bluesky'></i></p>
-                <p><i class='bx icon'></i></p>
+                 <a href="https://www.linkedin.com/in/olivia-hill-cousins" target="_blank" rel="noopener noreferrer">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+
+                    <a href="https://bsky.app/profile/oliviah-c.bsky.social" target="_blank" rel="noopener noreferrer">
+                        <i class='bi bi-bluesky'></i>
+                    </a>
+
+                    <a href="https://orcid.org/0009-0009-4436-8812" target="_blank" rel="noopener noreferrer">
+                        <img src="images/ORCID-iD_icon_unauth_reversed_vector.png" class="orcid-logo" alt="ORCID logo">
+                    </a>
             </div>
         </section>
 

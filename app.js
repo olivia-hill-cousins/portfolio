@@ -34,3 +34,39 @@ closeIcon.addEventListener("click", function(){
     sideBar.classList.add("close-sidebar");
     
 })
+
+
+function openCard(card) {
+    card.classList.add("expanded");
+    document.querySelector(".card-overlay").classList.add("active");
+}
+
+function closeCard() {
+    document.querySelector(".card.expanded")?.classList.remove("expanded");
+    document.querySelector(".card-overlay").classList.remove("active");
+}
+
+function openCard(card) {
+    card.classList.add("expanded");
+    const overlay = document.querySelector(".card-overlay");
+    if (overlay) {
+        overlay.classList.add("active");
+    }
+    document.body.classList.add("no-scroll");
+}
+
+function closeCard() {
+    const expanded = document.querySelector(".card.expanded");
+    if (expanded) {
+        expanded.classList.remove("expanded");
+    }
+
+    const overlay = document.querySelector(".card-overlay");
+    if (overlay) {
+        overlay.classList.remove("active");
+    }
+
+    document.body.classList.remove("no-scroll");
+}
+
+
