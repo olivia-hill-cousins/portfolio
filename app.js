@@ -36,15 +36,6 @@ closeIcon.addEventListener("click", function(){
 })
 
 
-function openCard(card) {
-    card.classList.add("expanded");
-    document.querySelector(".card-overlay").classList.add("active");
-}
-
-function closeCard() {
-    document.querySelector(".card.expanded")?.classList.remove("expanded");
-    document.querySelector(".card-overlay").classList.remove("active");
-}
 
 function openCard(card) {
     card.classList.add("expanded");
@@ -68,5 +59,6 @@ function closeCard() {
 
     document.body.classList.remove("no-scroll");
 }
+
 
 

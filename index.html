@@ -8,12 +8,18 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Basic Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <!-- Filled Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+    <!-- Brand Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <!--
+     
         <video class="back-vid" autoplay loop muted plays-inline src="videos/galaxy.mp4"></video>
-        -->
+        
 
 
         <header data-aos="fade-down" data-aos-duration="2000">
@@ -34,7 +40,7 @@
                     </a>
 
                     <a href="https://bsky.app/profile/oliviah-c.bsky.social" target="_blank" rel="noopener noreferrer">
-                        <i class='bi bi-bluesky'></i>
+                        <i class='bxl bx-bluesky'></i>
                     </a>
 
                     <a href="https://orcid.org/0009-0009-4436-8812" target="_blank" rel="noopener noreferrer">
@@ -60,18 +66,18 @@
 
             <div class="social-sidebar">
                 <a href="http://www.linkedin.com/in/olivia-hill-cousins"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://bsky.app/profile/oliviah-c.bsky.social"><i class="bi bi-bluesky"></i></a>
+                <a href="https://bsky.app/profile/oliviah-c.bsky.social"><i class="bxl bx-bluesky"></i></a>
                 <a href="https://orcid.org/0009-0009-4436-8812" target="_blank" rel="noopener noreferrer">
-  <img src="images/ORCID-iD_icon_unauth_reversed_vector.png" class="orcid-logo" alt="ORCID logo">
-</a>
+                    <img src="images/ORCID-iD_icon_unauth_reversed_vector.png" class="orcid-logo" alt="ORCID logo">
+                </a>
 
             </div>
         </div>
-
+        <!--
         <div class="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
             <video autoplay loop muted plays-inline src="videos/blackhole.mp4"></video>
         </div>
-
+        --->
         <section class="hero ">
             <div class="hero-info autoBlur" data-aos="fade-right" data-aos-duration="1000">
                 <div class="hero-info-title" >
@@ -97,7 +103,7 @@
             <h1 class="section-title autoDisplay">Hello,There👋</h1>
             <div class="info-cards">
                 <div class="card" onclick="openCard(this)">
-                    <h1>Hi there, I'm Olivia</h1>
+                <h1>Hi there, I'm Olivia</h1>
                 <p>I'm a PhD Researcher at the University of Exeter. </p>
 
                 <div class="card-fulltext">
@@ -115,30 +121,25 @@
                 </div>
 
                 <div class="card" onclick="openCard(this)">
-                    <h1>Research Toolkit</h1>
-                    <p>I work with numerous and dynamic methodological and statistical techniques. </p>
 
                     <video src="videos/Bystander_Trolley_AI.mp4" autoplay loop muted plays-inline></video>
                     <div class="card-fulltext">I work with a broad set of analytical and methodological tools, including R, Python, PsychoPy, advanced neurophysiological stimulus and methodological design, advanced data simulation and power analysis, and mixed‑effects modeling.</div>
-                    <div class="read-more-wrapper">
+                    <p>I work with numerous and dynamic methodological and statistical techniques. </p>
+                    <h1>Research Toolkit</h1>
                     <button class="read-more" onclick="openCard(this.closest('.card'))">
-                        READ MORE <i class='bx bxs-chevron-right'></i>
-                    </button>
-                </div>
-
+                    READ MORE <i class='bx bxs-chevron-right'></i>
+                </button>
                 </div>
 
                 <div class="card" onclick="openCard(this)">
                     <h1>My Interests</h1>
                     <p>I've always been fascinated by morality, and how this manifests in various entities (human and non-human). </p>
                 
-                    <img src="images/grid2.png" alt="">
+                    <video class="whale-video" src="videos/whale-video.mp4" autoplay loop muted playsinline></video>
                     <div class="card-fulltext">Curious by nature, I've always been drawn to the complexities of intelligent moral minds. Naturally, I gravitated towards the field of moral cognition. My academic path began with applying moral cognition to psychopathy in my BSc and now extends to AI in my PhD. Long before this, I was (am) captivated by highly intelligent mammals such as whales and dolphins, and so I am also keen to explore comparative cognition and moral behavior in non-human species.</div>
-                <div class="read-more-wrapper">
-                    <button class="read-more" onclick="openCard(this.closest('.card'))">
-                        READ MORE <i class='bx bxs-chevron-right'></i>
-                    </button>
-                </div>
+                <button class="read-more" onclick="openCard(this.closest('.card'))">
+                    READ MORE <i class='bx bxs-chevron-right'></i>
+                </button>
 
                 </div>
 
@@ -152,11 +153,9 @@
                     <button><i class='bx bx-send'></i> Contact Me</button>
                     </div>
                     <div class="card-fulltext">My work spans AI, computational ethics, social psychology and cognition, and I thrive in interdisciplinary environments. I’m open to collaborations across diverse research areas and am actively exploring post‑doctoral opportunities to continue developing my academic career.</div>
-                    <div class="read-more-wrapper">
-                <button class="read-more" onclick="openCard(this.closest('.card'))">
+                    <button class="read-more" onclick="openCard(this.closest('.card'))">
                     READ MORE <i class='bx bxs-chevron-right'></i>
                 </button>
-                </div>
 
                 </div>
             </div>
@@ -169,31 +168,35 @@
             <h1 class="section-title autoDisplay">My Research 👨‍💻</h1>
             <div class="project-card">
                 <div class="project-vidbox autoBlur" >
-                    <video loop id="projectVideo1" src="videos/project1.mp4"></video>
+                    <video loop id="projectVideo1" src="videos/hVai_tinder.mp4"></video>
                     <div class="hover-sign"></div>
                 </div>
                 <div class="project-info fadein-left">
                     <h1>A <span class="gradient">Meta-Analysis: </span>Judgments of AI vs. Humans</h1>
                     <p>The preprint details my meta-analysis of 50+ studies that looked at how people judge AI agents’ moral decisions compared to humans. Broadly speaking, we do 𝗻𝗼𝘁 judge AI in a fundamentally different way (🧍 = 🤖), but our judgments are malleable to factors such as the mental capabilities we perceive the AI to have (🤖 ≠ 🧠/💕). </p>
                      <a href="https://osf.io/preprints/psyarxiv/stcej_v2" target="_blank">
-            <button>
-                <i class='bx bx-link-external'></i> PDF
-            </button>
-        </a>
+                        <div class="pdf-border">   
+                            <button>
+                                <i class='bx bx-link-external'></i> PDF
+                            </button>
+                        </div> 
+                    </a>
                     
             </div>
             </div>
 
-            <div class="project-card">
+            <div class="project-card" id="dynamic-eeg">
                 <div class="project-vidbox autoBlur">
-                    <video loop id="projectVideo2" src="videos/project2.mp4"></video>
+                    <video loop id="projectVideo2" src="videos/psychopy_eeg_screenRec.mov"></video>
                 </div>
                 <div class="project-info fadein-left">
                     <h1> Solution for Sending <span class="gradient">Dynamic</span> EEG Triggers </h1>
                     <p>This preprint details the pipeline I have developed to accommodate experimental designs, previously inaccessible to neuroimaging work. The full pipeline (including a drop-in PsychoPy study) is available for download via the link below.</p>
                     <a href="https://osf.io/preprints/psyarxiv/2fmbj_v1" target="_blank">
-                    <button><i class='bx bx-link-external' ></i> PDF</button>
-                </a>
+                        <div class="pdf-border">
+                            <button><i class='bx bx-link-external' ></i> PDF</button>
+                        </div>
+                    </a>
                 </div>
             </div>
             
@@ -220,14 +223,34 @@
             </h1>
             <div class="skills-box autoDisplay">
                 <img class="skills-image" src="images/digital brain (2).png" alt="">
-                <div class="Designer">
-                    <h1 class="gradient">Designer <i class='bx bx-laptop'></i></h1>
-                    <p>I have expertise in HTML, CSS, JavaScript, and design tools like Figma and Adobe XD. My strength lies in blending aesthetics with functionality to create seamless user experiences.</p>    
+                <div class="OpenScience">
+                    <h1 class="gradient">Open Science <i class='bx bx-science'></i></h1>
+                    <p>I currently coordinate Exeter's ReproducibiliTea branch. ReproducibiliTea is an open science journal club with branches worldwide. This role entails leading and organizing sessions for researchers at all career stages on open science and reproducibility. This position often involves networking and collaborating with researchers (internal & external to the university) with specialization/experience with particular practices to lead sessions teaching these practices.</p>    
                 </div>
                 
                 <div class="coder">
-                    <h1 class="gradient">Coder <i class='bx bx-code-block' ></i></h1>
-                    <p>I’m skilled in HTML, CSS, JavaScript, and frameworks like React and Node.js. I also have experience with database management using MongoDB and MySQL.</p>
+                    <h1 class="gradient"><i class='bx bx-code-block' > </i>    Coding </h1>
+                    <p>I have strong proficiency in R, Python, and LaTeX, with particular expertise in R for data analysis. I also work extensively with HTML and CSS to support integrated, reproducible workflows with R and GitHub.</p>
+                </div>
+
+                <div class="dataAnalysis">
+                    <h1 class="gradient">Data Analysis  <i class='bx bx-chart-bar-columns' ></i></h1>
+                    <p>I specialize in advanced statistical modeling and data analysis, with particular expertise in multilevel meta‑analytic methods, mixed‑effects modeling, complex data simulation, reproducible pipelines, and computational approaches to behavioral data.</p>
+                </div>
+
+                <div class="techMedia">
+                    <h1 class="gradient">Technical Media Production <i class='bx bx-film' ></i></h1>
+                    <p>I have extensive experience in stimulus design for behavioral and EEG research, creating high‑precision visual materials using Adobe Photoshop, Illustrator, and After Effects. This includes developing stimuli with frame‑accurate event onsets to ensure clean EEG timing and avoid transitional artifacts. Producing animated stimuli enables fine‑grained experimental manipulation, expanded stimulus sets for advanced statistical models such as GLMMs with stimuli as random effects, and greater conceptual granularity than traditional stimulus formats (e.g., written dilemmas).</p>
+                </div>
+
+                <div class="expArchitecture">
+                    <h1 class="gradient">
+                        <span class="line1"><i class='bx bx-timeline'></i> &nbsp; Complex</span>
+                        <br>
+                        <span class="line2">Experimental Architectures</span>
+                    </h1>
+
+                    <p>I have expertise in building complex experimental designs for both EEG and behavioral research across multiple platforms. This includes developing advanced EEG paradigms in PsychoPy with dynamic triggers and fully scripted timing logic (<a href="#dynamic-eeg" class="readmore">read more here</a>). I have also implemented sophisticated behavioral studies in Gorilla, including partial Latin‑square designs, multi‑stage task structures, and adaptive staircase procedures for participant‑specific reaction‑time calibration.</p>
                 </div>
 
                 <div class="slider" reverse="true" style="
@@ -257,26 +280,12 @@
             
                 <a href="#"><i class='bx bxl-telegram' ></i> oh298@exeter.ac.uk</a>
                 <a href="http://www.linkedin.com/in/olivia-hill-cousins"><i class='bx bxl-linkedin-square' ></i> olivia-hill-cousins</a>
-                <div class="social-icons">
                      <a href="https://orcid.org/0009-0009-4436-8812" target="_blank" rel="noopener noreferrer">
-  <img src="images/ORCID-iD_icon_unauth_reversed_vector.png" class="orcid-logo" alt="ORCID logo"></a>
-                <a href="https://bsky.app/profile/oliviah-c.bsky.social"><i class="bi bi-bluesky"></i></i></a>
-                </div>
+                    <img src="images/ORCID-iD_purple.png" class="orcid-logo" alt="ORCID logo"> 0009-0009-4436-8812</a>
+                <a href="https://bsky.app/profile/oliviah-c.bsky.social"><i class="bxl bx-bluesky"></i> oliviah-c</a>
             </div>
 
-            <div class="contact-box autoBlur">
             
-                <p>Full Name</p>
-                <input placeholder="Your Full name" type="full name">
-
-                <p>Email Address</p>
-                <input placeholder="Your Email" type="Contact">
-
-                <p>Your Message</p>
-                <input  class="input-message" type="contact" placeholder="shaire your thoughts...">
-
-                <button>Send Message <i class='bx bx-mail-send'></i></button>
-            </div>
         
         </section> 
 
