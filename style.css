@@ -70,7 +70,10 @@ header{
 .left{
     display: flex;
     align-items: center;
+    height: fit-content;
 }
+
+
 
 .left img{
     width: 40px;
@@ -81,8 +84,9 @@ header{
 header ul{
     display: flex;
     justify-content: space-between;
-    width: 30%;
-    padding: 15px 15px;
+    width: 35%;
+    gap: 1rem;
+    padding: 2rem;
     border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.326);
     backdrop-filter: blur(10px);
@@ -98,7 +102,7 @@ header ul a{
     color: white;
     font-weight: 700;
     transition: 0.3s;
-    margin: 0 10px;
+    margin: 0 0px;
 }
 
 header ul a:hover{
@@ -1127,11 +1131,15 @@ body.no-scroll {
 
 .contact-section h1{
     left: 40%;
+    margin-top: 5rem;
+    margin-bottom: 15rem;
 }
 
 .social-box {
     display: flex;
     flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 15rem;
 }
 
 .social-box a{
@@ -1182,7 +1190,7 @@ body.no-scroll {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
@@ -1238,7 +1246,7 @@ body.no-scroll {
 @keyframes autoDisplayAnimation{
     from{
         filter: blur(10px);
-        transform: translateY(-200px) scale(0);
+        transform: translateY(-20vh) scale(0);
     } 50%{
         opacity: 1;
         filter: blur(0px);
@@ -1303,6 +1311,12 @@ body.no-scroll {
     padding-left: 20px;
 }
 
+
+#cv{
+    color: turquoise;
+
+}
+
 .sidebar ul li{
     list-style: none;
     margin-bottom: 30px;
@@ -1311,7 +1325,7 @@ body.no-scroll {
 .sidebar ul li a{
     text-decoration: none;
     color: lightgray;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     text-shadow:0 0 15px #4c4c4c;
 }
@@ -1322,11 +1336,33 @@ body.no-scroll {
     text-wrap: nowrap;
 }
 
-.social-sidebar a{
-    font-size: 35px;
-    padding: 5px 5px;
-    cursor: pointer;
-    transition: 0.5s;
+.social-sidebar a {
+  display: flex;
+  align-content: center;
+  gap: 12px;
+  font-size: 25px;
+  padding: 5px 5px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: lightgray;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.social-sidebar .orcid-link {
+  display: flex;
+  font-size: 18px;
+  color: lightgray;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.social-sidebar .orcid-logo {
+  width: auto;
+  height: 40px;
+  margin: 0;
+  margin-left: -6.5px;
+  margin-top: -8px;
 }
 
 /* Sidebar Open ANimation */
@@ -1336,7 +1372,7 @@ body.no-scroll {
 
 @keyframes openSideBarAnimation {
     to{
-        width: 80%;
+        width: 50%;
         opacity: 1;
         bottom: 0;
         border-radius: 0;
@@ -1382,10 +1418,10 @@ body.no-scroll {
 
 
 @media screen and (max-width: 1200px){
-    .blackhole-box video{
-        margin-top: -20%;
+    .left h2{
+    font-size: 1.3rem;
     }
-
+    
     .hero-info h1{
         font-size: 40px;
         max-width: 400px;
@@ -1398,11 +1434,22 @@ body.no-scroll {
 
     .skills-video-box{
         right: 0%;
+        mix-blend-mode:lighten;
     }
 
     .skills-video-box video{
-        height: 50rem;
+        height: 500px;
+        mix-blend-mode:lighten;
     }
+
+    .skills-video-box{
+    position: absolute;
+    right: 3%;
+    filter: brightness(0.8);
+    opacity: 0.35;
+    }
+
+
 
     .info-cards{
         grid-template-columns: auto;
@@ -1420,12 +1467,36 @@ body.no-scroll {
         scale: 0.8;
     }
 
+    
+
+    .contact-section {     
+    flex-direction: column; 
+    height: 55vh;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    padding-top: 4rem;
+    }
+
+
     .contact-section .section-title {
-        left: 30%;
+        margin:0;
+    }
+
+    .social-box {
+        margin-top: 0;
+        margin-bottom: 0;
+
+
+    }
+    
+    .footer{
+        height: 5%;
     }
 }
 
 @media screen and (max-width: 700px){
+
+
     header {
         position: fixed;
         height: 50px;
@@ -1441,11 +1512,6 @@ body.no-scroll {
 
     .menu-icon{
         display: inline;
-    }
-
-    .blackhole-box video {
-        width: 100%;
-        margin-top: -15%;
     }
 
     .autoBlur{
@@ -1519,7 +1585,7 @@ body.no-scroll {
 
     .project-card{
         flex-direction: column;
-        margin-left: 25%;
+        margin-left: 15%;
         gap: 30px;
     }
     
@@ -1613,15 +1679,11 @@ body.no-scroll {
         
     }
 
-    .blackhole-box {
-        overflow: hidden;
-    }
 
-    .blackhole-box video {
-        width: 140%;
-        margin-top: -27%;
-
+    .info-cards{
+        width: 45vh;
     }
+    
 
     .left {
         scale: 0.9;
@@ -1675,25 +1737,39 @@ body.no-scroll {
 
     .skills-box{
         height: 120vh;
-        margin-right: 30px;
     }
 
     .slider{
         bottom: 0%;
     }
 
-    .contact-section{
-        scale: 0.9;
-        height: 120vh;
-    }
 
     .contact-section .section-title {
-        top: -30px;
-        left: 25%;
+        margin: 0;
     }
 
+    .contact-section {     
+    flex-direction: column; 
+    height: 55vh;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    padding-top: 4rem;
+    scale: 0.9;
+    }
+
+
+
+    .social-box {
+        margin-top: 0;
+        margin-bottom: 0;
+
+
+    }
+    
+
     .footer {
-        padding: 10px;
+        padding: 0.75rem;
+        height: 4%;
     }
 
     .footer p {
@@ -1709,6 +1785,7 @@ body.no-scroll {
         font-size: 10 px;
         margin: 0;
     }
+
 
     
 
