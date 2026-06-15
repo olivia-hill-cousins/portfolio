@@ -1204,7 +1204,7 @@ body.no-scroll {
     border: 2px solid lightgray;
     position: absolute;
     left: 49%;
-    bottom: 8%;
+    bottom: 15%;
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.626);
@@ -1261,7 +1261,7 @@ body.no-scroll {
     height: 50px;
     background-color: rgba(255, 255, 255, 0.121);
     z-index: 999;
-    padding: 0 3rem;
+    padding: 0 1rem;
 }
 
 .footer p a {
