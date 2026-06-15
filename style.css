@@ -1199,12 +1199,13 @@ body.no-scroll {
 
 
 .scroll-up {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
     height: 50px;
     width: 30px;
     border: 2px solid lightgray;
-    position: absolute;
-    left: 49%;
-    bottom: 15%;
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.626);
@@ -1215,7 +1216,7 @@ body.no-scroll {
 .scroll-up::after {
     content: "";
     position: absolute;
-    top: 80%;
+    bottom: 80%;
     left: 50%;
     height: 10px;
     width: 10px;
@@ -1227,7 +1228,6 @@ body.no-scroll {
 }
 
 .scroll-up::before {
-    top: 70%;
     animation-delay: 0.5s;
 }
 
@@ -1533,7 +1533,8 @@ body.no-scroll {
 
     
 
-    .contact-section {     
+    .contact-section {   
+    position: relative;  
     flex-direction: column; 
     height: 55vh;
     justify-content: flex-start;
