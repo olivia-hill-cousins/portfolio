@@ -1204,7 +1204,7 @@ body.no-scroll {
         color: lightgray;
         text-decoration: none;
         font-size: 11px;
-        opacity: 0.8;
+        opacity: 0.4;
         transition: 0.3s ease;
     }
 
